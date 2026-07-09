@@ -5,7 +5,7 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
+ <script src="script.js"></script>
 <header>
 <h1>Contact Us</h1>
 
@@ -24,15 +24,22 @@
 
 <div class="container">
 
-<form>
 
-<input type="text" placeholder="Your Name">
+<form id="contactForm">
 
-<input type="email" placeholder="Email">
+<label>Name</label>
+<input type="text" id="name">
 
-<textarea rows="5" placeholder="Message"></textarea>
+<label>Email</label>
+<input type="email" id="email">
 
-<button>Send</button>
+<label>Phone Number</label>
+<input type="text" id="phone">
+
+<label>Message</label>
+<textarea id="message" rows="5"></textarea>
+
+<button type="submit">Send Message</button>
 
 </form>
 
